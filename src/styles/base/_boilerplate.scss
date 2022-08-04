@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: $fs-md;
+  font-family: $ff-sans-serif;
+  font-weight: $fw-400;
+  line-height: $leading-normal;
+  color: $color-jet;
+  background-color: $color-white;
+}
