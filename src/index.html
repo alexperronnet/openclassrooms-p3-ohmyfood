@@ -41,7 +41,38 @@
     />
   </head>
   <body>
-    <div id="app"></div>
+    <!-- App -->
+    <div id="app">
+      <!-- Header -->
+      <header class="header">
+        <h1 class="header__title">Ohmyfood</h1>
+      </header>
+
+      <!-- Location -->
+      <div class="location">
+        <!-- Icon -->
+        <svg class="location__icon">
+          <use xlink:href="images/icons-sprite.svg#location-dot" />
+        </svg>
+
+        <!-- City -->
+        <p class="location__city">Paris, Belleville</p>
+      </div>
+
+      <!-- Hero -->
+      <section class="hero">
+        <!-- Hero title -->
+        <h2 class="hero__title">Réservez le menu qui vous convient</h2>
+
+        <!-- Hero description -->
+        <p class="hero__description">
+          Découvrez des restaurants d'exception, séléctionnés par nos soins.
+        </p>
+
+        <!-- Hero button -->
+        <a href="#restaurants" class="btn">Explorer nos restaurants</a>
+      </section>
+    </div>
     <script type="module" src="main.js"></script>
   </body>
 </html>

@@ -1,0 +1,44 @@
+@use "../abstracts" as *;
+
+// Location
+.location {
+  padding: 1.6rem;
+  background-color: $color-platinum;
+
+  @include flex(null, center, center, 1.6rem);
+
+  &__icon {
+    @include icon;
+  }
+
+  &__city {
+    font-weight: $fw-700;
+  }
+}
+
+// Hero
+.hero {
+  @include flex(column, center, center, null);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: $color-cultured;
+
+  &__title {
+    max-width: 24rem;
+    margin-inline: auto;
+
+    @include text(
+      $fs: $fs-xl,
+      $fw: $fw-700,
+      $lh: $leading-tight,
+      $color: $color-smoky-black,
+      $align: center
+    );
+    margin-bottom: 2.4rem;
+  }
+
+  &__description {
+    @include text($fs: $fs-lg, $lh: $leading-tight, $align: center);
+    margin-bottom: 3.2rem;
+  }
+}

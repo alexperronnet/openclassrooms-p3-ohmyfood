@@ -1,0 +1,20 @@
+@use "../abstracts" as *;
+
+.header {
+  position: relative;
+  z-index: 10;
+  padding: 2.4rem;
+  box-shadow: $shadow-md;
+
+  &__title {
+    @include text(
+      $ff-cursive,
+      $fs-2xl,
+      null,
+      $leading-none,
+      $color-smoky-black,
+      center
+    );
+    text-transform: lowercase;
+  }
+}

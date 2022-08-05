@@ -21,8 +21,14 @@ $fs-sm: 1.4rem;
 $fs-md: 1.6rem;
 $fs-lg: 1.8rem;
 $fs-xl: 2.4rem;
+$fs-2xl: 3rem;
 
 // Line height
 $leading-none: 1;
 $leading-tight: 1.25;
 $leading-normal: 1.5;
+
+// Shadows
+$shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.2), 0 2px 4px -2px rgb(0 0 0 / 0.2);
+$shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.2), 0 4px 6px -4px rgb(0 0 0 / 0.2);
+$shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.2), 0 8px 10px -6px rgb(0 0 0 / 0.2);

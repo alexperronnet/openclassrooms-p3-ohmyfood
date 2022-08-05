@@ -23,6 +23,11 @@ body {
   text-rendering: optimizeSpeed;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 img {
   max-width: 100%;
   display: block;

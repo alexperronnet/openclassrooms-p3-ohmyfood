@@ -5,10 +5,11 @@ html {
 }
 
 body {
-  font-size: $fs-md;
-  font-family: $ff-sans-serif;
-  font-weight: $fw-400;
-  line-height: $leading-normal;
-  color: $color-jet;
+  @include text;
   background-color: $color-white;
+}
+
+::selection {
+  color: $color-amethyst;
+  background-color: rgba($color-amethyst, 10%);
 }
