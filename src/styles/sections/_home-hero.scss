@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+.hero {
+  padding: 5rem 0;
+  background-color: $color-bg-02;
+
+  &__container {
+    @include container;
+    @include flex(column, center, null, 3.2rem);
+    text-align: center;
+  }
+
+  &__title {
+    max-width: 24rem;
+    color: $color-fg-01;
+    font-size: $fs-04;
+    font-weight: $fw-700;
+    line-height: $leading-02;
+    margin-bottom: -1.6rem;
+  }
+}

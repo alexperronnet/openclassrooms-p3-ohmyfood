@@ -2,7 +2,8 @@
 
 // Container
 @mixin container {
-  width: calc(100% - 2.4rem);
+  max-width: 73rem;
+  width: calc(100% - (2.4rem * 2));
   margin-inline: auto;
 }
 
@@ -15,27 +16,18 @@
   gap: $gap;
 }
 
-// Typography
-@mixin text(
-  $ff: $ff-sans-serif,
-  $fs: $fs-md,
-  $fw: $fw-400,
-  $lh: $leading-normal,
-  $color: $color-jet,
-  $align: left
-) {
-  font-family: $ff;
-  font-size: $fs;
-  font-weight: $fw;
-  line-height: $lh;
-  color: $color;
-  text-align: $align;
+// Grid
+@mixin grid($columns, $gap) {
+  display: grid;
+  grid-template-columns: repeat($columns, minmax(0, 1fr));
+  gap: $gap;
 }
 
 // Icon
-@mixin icon($min-w: 1.6rem, $min-h: 1.6rem, $max-w: 1.6rem, $max-h: 1.6rem) {
-  min-width: $min-w;
-  min-height: $min-h;
-  max-width: $max-w;
-  max-height: $max-h;
+@mixin icon($size: 1.6rem) {
+  min-width: $size;
+  min-height: $size;
+  max-width: $size;
+  max-height: $size;
+  fill: currentColor;
 }

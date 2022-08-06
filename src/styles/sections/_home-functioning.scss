@@ -1,0 +1,68 @@
+@use "../abstracts" as *;
+
+.functioning {
+  padding: 5rem 0;
+
+  &__container {
+    @include container;
+    @include flex(column, null, null, 3.2rem);
+  }
+
+  &__title {
+    font-size: $fs-04;
+    font-weight: $fw-700;
+    color: $color-fg-01;
+  }
+
+  &__list {
+    @include flex(column, null, null, 2.4rem);
+    counter-reset: step;
+  }
+
+  &__item {
+    position: relative;
+    padding: 2.4rem 3.2rem;
+    margin-left: 1.2rem;
+    background-color: $color-bg-02;
+    @include flex(null, center, null, 2.4rem);
+    border-radius: 2rem;
+    box-shadow: $shadow-01;
+    counter-increment: step;
+
+    &::before {
+      content: counter(step);
+      position: absolute;
+      left: -1.2rem;
+      @include flex(null, center, center, null);
+      width: 2.4rem;
+      height: 2.4rem;
+      border-radius: 100%;
+      font-size: $fs-01;
+      color: $color-fg-03;
+      background-color: $color-01;
+    }
+
+    &:hover {
+      cursor: not-allowed;
+      background-color: rgba($color-01, 0.1);
+      color: $color-01;
+
+      .functioning__icon,
+      .functioning__text {
+        color: $color-01;
+      }
+    }
+  }
+
+  &__icon {
+    @include icon(1.8rem);
+    opacity: 0.6;
+    transition: $transition;
+  }
+
+  &__text {
+    font-weight: $fw-700;
+    color: $color-fg-01;
+    transition: $transition;
+  }
+}

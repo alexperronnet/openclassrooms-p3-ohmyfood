@@ -1,0 +1,37 @@
+@use "../abstracts" as *;
+
+.footer {
+  padding: 2.4rem 0;
+  color: $color-fg-03;
+  background-color: $color-bg-04;
+
+  &__container {
+    @include container;
+    @include flex(column, null, null, 2.4rem);
+  }
+
+  &__logo {
+    font-family: $ff-cursive;
+    font-size: $fs-03;
+    line-height: $leading-01;
+  }
+
+  &__nav {
+    @include flex(column, null, null, 1.6rem);
+  }
+
+  &__link {
+    font-size: $fs-01;
+    line-height: $leading-01;
+    width: fit-content;
+
+    &-flex {
+      @include flex(null, center, null, 1.6rem);
+    }
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+  }
+}

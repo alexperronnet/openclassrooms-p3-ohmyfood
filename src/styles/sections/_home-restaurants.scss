@@ -1,0 +1,71 @@
+@use "../abstracts" as *;
+
+.restaurants {
+  padding: 5rem 0;
+  background-color: $color-bg-02;
+
+  &__container {
+    @include container;
+    @include flex(column, null, null, 3.2rem);
+  }
+
+  &__title {
+    font-size: $fs-04;
+    font-weight: $fw-700;
+    color: $color-fg-01;
+  }
+
+  &__cards {
+    @include grid(1, 2.4rem);
+  }
+
+  &__item {
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: $shadow-02;
+
+    &-img {
+      height: 17.5rem;
+      width: 100%;
+      object-fit: cover;
+      transition: $transition;
+    }
+
+    &-footer {
+      position: relative;
+      background-color: $color-bg-01;
+      z-index: 1;
+      @include flex(null, center, space-between, null);
+      padding: 2rem 2.4rem;
+    }
+
+    &-infos {
+      @include flex(column, null, null, null);
+    }
+
+    &-title {
+      font-size: $fs-03;
+      font-weight: $fw-700;
+      color: $color-fg-01;
+    }
+
+    &:hover {
+      .restaurants__item-img {
+        transform: scale(1.3) rotate(10deg);
+      }
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    top: 1.4rem;
+    right: 1.2rem;
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.4rem;
+    font-size: $fs-01;
+    font-weight: $fw-700;
+    color: darken($color-03, 40%);
+    background-color: $color-03;
+  }
+}

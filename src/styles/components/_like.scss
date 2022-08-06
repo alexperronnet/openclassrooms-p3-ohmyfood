@@ -1,0 +1,42 @@
+@use "../abstracts" as *;
+
+.like {
+  position: relative;
+  @include flex(null, center, center, null);
+  cursor: pointer;
+
+  input {
+    display: none;
+
+    + svg {
+      animation: 800ms popover ease-in-out forwards;
+    }
+
+    &:checked {
+      + svg {
+        animation: 800ms pop ease-in-out forwards;
+      }
+
+      + svg use {
+        animation: 800ms draw-heart ease-in-out forwards;
+      }
+    }
+  }
+
+  svg {
+    font-size: 3rem;
+    width: 1.1em;
+    height: 1em;
+    position: relative;
+    z-index: 2;
+
+    use {
+      fill: transparent;
+      stroke-width: 40;
+      stroke: $color-fg-02;
+      stroke-dasharray: 1600;
+      stroke-dashoffset: 0;
+      stroke-linecap: round;
+    }
+  }
+}
