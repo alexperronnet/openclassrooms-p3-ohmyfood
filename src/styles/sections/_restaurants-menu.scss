@@ -123,5 +123,13 @@
         transition: all 500ms ease-in-out;
       }
     }
+
+    @for $i from 2 through 5 {
+      &:nth-child(#{$i}) {
+        animation-delay: 150ms * $i;
+      }
+    }
+
+    animation: menu-appear 1000ms both;
   }
 }
