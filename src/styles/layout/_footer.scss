@@ -34,4 +34,30 @@
       text-underline-position: under;
     }
   }
+
+  @media screen and (min-width: 672px) {
+    padding: 4rem 0;
+
+    &__container {
+      @include flex(column, center, null, 3.2rem);
+    }
+
+    &__logo {
+      font-size: $fs-04;
+      width: 100%;
+      @include flex(column, center, null, 3.2rem);
+
+      &::after {
+        content: "";
+        width: 100%;
+        height: 0.2rem;
+        background-color: rgba($color-bg-01, 0.1);
+      }
+    }
+
+    &__nav {
+      width: 100%;
+      @include flex(row, null, space-between, null);
+    }
+  }
 }

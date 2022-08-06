@@ -18,4 +18,10 @@
     line-height: $leading-02;
     margin-bottom: -1.6rem;
   }
+
+  @media screen and (min-width: 672px) {
+    &__title {
+      max-width: 100%;
+    }
+  }
 }
