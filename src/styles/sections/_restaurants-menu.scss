@@ -56,6 +56,14 @@
         background-color: $color-03;
       }
     }
+
+    @for $i from 1 through 3 {
+      &:nth-child(#{$i}) {
+        animation-delay: 200ms * $i;
+      }
+    }
+
+    animation: menu-appear 1000ms both;
   }
 
   &__item {
@@ -115,21 +123,13 @@
       background-color: $color-03;
       padding: 2rem;
       margin-right: -6.4rem;
-      transition: all 500ms ease-in-out;
+      transition: all 250ms ease-in-out;
 
       &-icon {
         @include icon(2.4rem);
         fill: $color-fg-03;
-        transition: all 500ms ease-in-out;
+        transition: all 250ms ease-in-out;
       }
     }
-
-    @for $i from 2 through 5 {
-      &:nth-child(#{$i}) {
-        animation-delay: 150ms * $i;
-      }
-    }
-
-    animation: menu-appear 1000ms both;
   }
 }

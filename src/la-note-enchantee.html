@@ -41,7 +41,312 @@
     />
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <!-- Header -->
+      <header class="header">
+        <div class="header__container">
+          <a href="/index" class="header__back">
+            <svg class="header__icon">
+              <use xlink:href="images/icons-sprite.svg#arrow-left" />
+            </svg>
+          </a>
+
+          <h1 class="header__logo">Ohmyfood</h1>
+        </div>
+      </header>
+
+      <!-- Hero image -->
+      <div class="restaurants-hero">
+        <img
+          src="./images/la-note-enchantee.webp"
+          alt="hero image La note enchantée"
+          class="restaurants-hero-img"
+        />
+      </div>
+
+      <!-- Main -->
+      <main class="menu">
+        <div class="menu__container">
+          <header class="menu__header">
+            <h2 class="menu__title">La note enchantée</h2>
+
+            <label for="like" class="like">
+              <input type="checkbox" id="like" />
+
+              <svg>
+                <use xlink:href="images/icons-sprite.svg#heart" />
+              </svg>
+            </label>
+          </header>
+
+          <section class="menu__type-list">
+            <div class="menu__type">
+              <h3 class="menu__type-title">Entrées</h3>
+
+              <label for="entree-1" class="menu__item">
+                <input
+                  type="radio"
+                  class="menu__item-radio"
+                  id="entree-1"
+                  name="entree"
+                />
+
+                <div class="menu__item-header">
+                  <h4 class="menu__item-title">Ravioles de foie gras</h4>
+
+                  <span class="menu__item-desc"
+                    >Accompagnés de leur crème à la truffe</span
+                  >
+                </div>
+
+                <span class="menu__item-price">25</span>
+
+                <div class="menu__item-check">
+                  <svg class="menu__item-check-icon">
+                    <use xlink:href="images/icons-sprite.svg#circle-check" />
+                  </svg>
+                </div>
+              </label>
+
+              <label for="entree-2" class="menu__item">
+                <input
+                  type="radio"
+                  class="menu__item-radio"
+                  id="entree-2"
+                  name="entree"
+                />
+
+                <div class="menu__item-header">
+                  <h4 class="menu__item-title">Caviar osciètre</h4>
+
+                  <span class="menu__item-desc"
+                    >Sur blini à la farine de blé noir</span
+                  >
+                </div>
+
+                <span class="menu__item-price">35</span>
+
+                <div class="menu__item-check">
+                  <svg class="menu__item-check-icon">
+                    <use xlink:href="images/icons-sprite.svg#circle-check" />
+                  </svg>
+                </div>
+              </label>
+
+              <label for="entree-3" class="menu__item">
+                <input
+                  type="radio"
+                  class="menu__item-radio"
+                  id="entree-3"
+                  name="entree"
+                />
+
+                <div class="menu__item-header">
+                  <h4 class="menu__item-title">Homard et espuma de potiron</h4>
+
+                  <span class="menu__item-desc"
+                    >Mariné aux zestes d'orange</span
+                  >
+                </div>
+
+                <span class="menu__item-price">20</span>
+
+                <div class="menu__item-check">
+                  <svg class="menu__item-check-icon">
+                    <use xlink:href="images/icons-sprite.svg#circle-check" />
+                  </svg>
+                </div>
+              </label>
+            </div>
+
+            <div class="menu__type">
+              <h3 class="menu__type-title">Plats</h3>
+
+              <label for="plat-1" class="menu__item">
+                <input
+                  type="radio"
+                  class="menu__item-radio"
+                  id="plat-1"
+                  name="plat"
+                />
+
+                <div class="menu__item-header">
+                  <h4 class="menu__item-title">
+                    Noix de coquilles Saint-Jacques
+                  </h4>
+
+                  <span class="menu__item-desc"
+                    >Sur lit de purée de céleri-rave</span
+                  >
+                </div>
+
+                <span class="menu__item-price">40</span>
+
+                <div class="menu__item-check">
+                  <svg class="menu__item-check-icon">
+                    <use xlink:href="images/icons-sprite.svg#circle-check" />
+                  </svg>
+                </div>
+              </label>
+
+              <label for="plat-2" class="menu__item">
+                <input
+                  type="radio"
+                  class="menu__item-radio"
+                  id="plat-2"
+                  name="plat"
+                />
+
+                <div class="menu__item-header">
+                  <h4 class="menu__item-title">Langoustine poêlée</h4>
+
+                  <span class="menu__item-desc">Purée de patate douce</span>
+                </div>
+
+                <span class="menu__item-price">35</span>
+
+                <div class="menu__item-check">
+                  <svg class="menu__item-check-icon">
+                    <use xlink:href="images/icons-sprite.svg#circle-check" />
+                  </svg>
+                </div>
+              </label>
+
+              <label for="plat-3" class="menu__item">
+                <input
+                  type="radio"
+                  class="menu__item-radio"
+                  id="plat-3"
+                  name="plat"
+                />
+
+                <div class="menu__item-header">
+                  <h4 class="menu__item-title">Mijoté de queue de boeuf</h4>
+
+                  <span class="menu__item-desc"
+                    >Et riz sauvage aux zestes de citron</span
+                  >
+                </div>
+
+                <span class="menu__item-price">44</span>
+
+                <div class="menu__item-check">
+                  <svg class="menu__item-check-icon">
+                    <use xlink:href="images/icons-sprite.svg#circle-check" />
+                  </svg>
+                </div>
+              </label>
+            </div>
+
+            <div class="menu__type">
+              <h3 class="menu__type-title">Desserts</h3>
+
+              <label for="dessert-1" class="menu__item">
+                <input
+                  type="radio"
+                  class="menu__item-radio"
+                  id="dessert-1"
+                  name="dessert"
+                />
+
+                <div class="menu__item-header">
+                  <h4 class="menu__item-title">Macaron noisette et chocolat</h4>
+
+                  <span class="menu__item-desc"
+                    >Glace au caramel brun et sel de Guérande</span
+                  >
+                </div>
+
+                <span class="menu__item-price">18</span>
+
+                <div class="menu__item-check">
+                  <svg class="menu__item-check-icon">
+                    <use xlink:href="images/icons-sprite.svg#circle-check" />
+                  </svg>
+                </div>
+              </label>
+
+              <label for="dessert-2" class="menu__item">
+                <input
+                  type="radio"
+                  class="menu__item-radio"
+                  id="dessert-2"
+                  name="dessert"
+                />
+
+                <div class="menu__item-header">
+                  <h4 class="menu__item-title">Baba au rhum revisité</h4>
+
+                  <span class="menu__item-desc">Avec son coulis de citron</span>
+                </div>
+
+                <span class="menu__item-price">22</span>
+
+                <div class="menu__item-check">
+                  <svg class="menu__item-check-icon">
+                    <use xlink:href="images/icons-sprite.svg#circle-check" />
+                  </svg>
+                </div>
+              </label>
+
+              <label for="dessert-3" class="menu__item">
+                <input
+                  type="radio"
+                  class="menu__item-radio"
+                  id="dessert-3"
+                  name="dessert"
+                />
+
+                <div class="menu__item-header">
+                  <h4 class="menu__item-title">Tarte au citron meringuée</h4>
+
+                  <span class="menu__item-desc">Déstructurée</span>
+                </div>
+
+                <span class="menu__item-price">23</span>
+
+                <div class="menu__item-check">
+                  <svg class="menu__item-check-icon">
+                    <use xlink:href="images/icons-sprite.svg#circle-check" />
+                  </svg>
+                </div>
+              </label>
+            </div>
+          </section>
+
+          <a href="#" class="btn">Commander</a>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__container">
+          <h5 class="footer__logo">Ohmyfood</h5>
+
+          <nav class="footer__nav">
+            <a href="#" class="footer__link footer__link-flex">
+              <svg class="location__icon">
+                <use xlink:href="images/icons-sprite.svg#utensils" />
+              </svg>
+
+              <span>Proposer un restaurant</span>
+            </a>
+
+            <a href="#" class="footer__link footer__link-flex">
+              <svg class="location__icon">
+                <use xlink:href="images/icons-sprite.svg#handshake-angle" />
+              </svg>
+
+              <span>Devenir partenaire</span>
+            </a>
+
+            <a href="#" class="footer__link">Mentions légales</a>
+
+            <a href="#" class="footer__link">Contact</a>
+          </nav>
+        </div>
+      </footer>
+    </div>
     <script type="module" src="main.js"></script>
   </body>
 </html>
