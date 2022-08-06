@@ -1,0 +1,38 @@
+@use "../abstracts" as *;
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@keyframes stroke-logo {
+  0% {
+    fill: transparent;
+    stroke: $color-fg-03;
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  50% {
+    fill: transparent;
+    stroke: $color-fg-03;
+  }
+  60% {
+    fill: transparent;
+    stroke: $color-fg-03;
+    stroke-width: 3;
+  }
+  100% {
+    fill: $color-fg-03;
+    stroke: transparent;
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
