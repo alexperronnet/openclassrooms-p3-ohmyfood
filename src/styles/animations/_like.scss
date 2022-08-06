@@ -3,7 +3,7 @@
 @keyframes draw-heart {
   0% {
     stroke-dashoffset: 1600;
-    stroke: $color-02;
+    stroke: url(#gradient);
   }
   80% {
     stroke-dashoffset: 0;
@@ -11,8 +11,8 @@
   }
   100% {
     stroke-dashoffset: 0;
-    fill: $color-01;
-    stroke: $color-01;
+    fill: url(#gradient);
+    stroke: url(#gradient);
   }
 }
 
