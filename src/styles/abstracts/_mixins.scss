@@ -31,3 +31,10 @@
   max-height: $size;
   fill: currentColor;
 }
+
+// Truncate
+@mixin truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
