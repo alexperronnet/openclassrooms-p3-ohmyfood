@@ -1,0 +1,89 @@
+@use "../abstracts" as *;
+
+.menu {
+  padding: 5rem 0;
+  position: relative;
+  z-index: 1;
+  margin-top: -4rem;
+  background-color: $color-bg-02;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  box-shadow: 0 -10px 15px -3px rgb(0 0 0 / 0.15),
+    0 -4px 6px -4px rgb(0 0 0 / 0.15);
+
+  &__container {
+    @include container;
+    @include flex(column, center, null, 4.2rem);
+  }
+
+  &__header {
+    width: 100%;
+    @include flex(null, center, space-between, null);
+  }
+
+  &__title {
+    font-family: $ff-cursive;
+    font-size: $fs-04;
+    line-height: $leading-01;
+    color: $color-fg-01;
+  }
+
+  &__type-list {
+    width: 100%;
+    @include flex(column, null, null, 4rem);
+  }
+
+  &__type {
+    @include flex(column, null, null, 2.4rem);
+
+    &-title {
+      text-transform: uppercase;
+      font-size: $fs-03;
+      @include flex(column, null, null, 0.75rem);
+      line-height: $leading-01;
+
+      &::after {
+        content: "";
+        width: 5rem;
+        height: 0.4rem;
+        background-color: $color-03;
+      }
+    }
+  }
+
+  &__item {
+    padding: 1.6rem;
+    @include flex(null, end, space-between, 1rem);
+    background-color: $color-bg-01;
+    border-radius: 1.6rem;
+    box-shadow: $shadow-01;
+
+    &-radio {
+      display: none;
+    }
+
+    &-header {
+    }
+
+    &-title {
+      font-weight: $fw-700;
+      color: $color-fg-01;
+    }
+
+    &-desc {
+      font-size: $fs-01;
+    }
+
+    &-price {
+      font-weight: $fw-700;
+
+      &::after {
+        content: "€";
+      }
+    }
+
+    &-check {
+      display: none;
+    }
+  }
+}

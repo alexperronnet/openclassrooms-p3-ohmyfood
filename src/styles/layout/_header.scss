@@ -8,7 +8,7 @@
 
   &__container {
     @include container;
-    @include flex(null, null, center, null);
+    @include flex(null, center, center, null);
   }
 
   &__logo {
@@ -16,5 +16,22 @@
     font-size: $fs-05;
     line-height: $leading-01;
     color: $color-fg-01;
+    text-transform: lowercase;
+  }
+
+  &__back {
+    line-height: 0;
+    position: absolute;
+    left: 2.4rem;
+    transition: $transition;
+
+    &:hover {
+      left: 2rem;
+    }
+  }
+
+  &__icon {
+    @include icon(2.4rem);
+    fill: $color-fg-02;
   }
 }
