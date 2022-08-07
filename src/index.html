@@ -60,11 +60,11 @@
   </head>
   <body>
     <!-- Loader -->
-    <div class="loader">
+    <!-- <div class="loader">
       <svg viewBox="0 0 1320 300">
         <text x="50%" y="50%" dy=".35em" text-anchor="middle">Ohmyfood!</text>
       </svg>
-    </div>
+    </div> -->
 
     <!-- App -->
     <div id="app">
@@ -76,7 +76,7 @@
       </header>
 
       <!-- Location -->
-      <section class="location">
+      <div class="location">
         <div class="location__container">
           <svg class="location__icon">
             <use xlink:href="images/icons-sprite.svg#location-dot" />
@@ -84,7 +84,7 @@
 
           <span class="location__city">Paris, Belleville</span>
         </div>
-      </section>
+      </div>
 
       <!-- Hero -->
       <section class="hero">
@@ -135,105 +135,109 @@
           <h3 class="restaurants__title">Restaurants</h3>
 
           <div class="restaurants__cards">
-            <a href="/la-palette-du-gout.html" class="restaurants__item">
-              <img
-                src="images/la-palette-du-gout.webp"
-                alt="La palette du goût"
-                class="restaurants__item-img"
-              />
+            <div class="restaurants__item-wrapper">
+              <a href="/la-palette-du-gout.html" class="restaurants__item">
+                <img
+                  src="images/la-palette-du-gout.webp"
+                  alt="La palette du goût"
+                  class="restaurants__item-img"
+                />
 
-              <span class="restaurants__badge">Nouveau</span>
+                <span class="restaurants__badge">Nouveau</span>
 
-              <footer class="restaurants__item-footer">
-                <div class="restaurants__item-infos">
-                  <h4 class="restaurants__item-title">La palette du goût</h4>
+                <footer class="restaurants__item-footer">
+                  <div class="restaurants__item-infos">
+                    <h4 class="restaurants__item-title">La palette du goût</h4>
+                    <span class="restaurants__item-city">Ménilmontant</span>
+                  </div>
+                </footer>
+              </a>
 
-                  <span class="restaurants__item-city">Ménilmontant</span>
-                </div>
+              <label for="restaurant-1" class="like">
+                <input type="checkbox" id="restaurant-1" />
 
-                <label for="restaurant-1" class="like">
-                  <input type="checkbox" id="restaurant-1" />
+                <svg>
+                  <use xlink:href="images/icons-sprite.svg#heart" />
+                </svg>
+              </label>
+            </div>
 
-                  <svg>
-                    <use xlink:href="images/icons-sprite.svg#heart" />
-                  </svg>
-                </label>
-              </footer>
-            </a>
+            <div class="restaurants__item-wrapper">
+              <a href="/la-note-enchantee.html" class="restaurants__item">
+                <img
+                  src="images/la-note-enchantee.webp"
+                  alt="la note enchantée"
+                  class="restaurants__item-img"
+                />
 
-            <a href="/la-note-enchantee.html" class="restaurants__item">
-              <img
-                src="images/la-note-enchantee.webp"
-                alt="La note enchantée"
-                class="restaurants__item-img"
-              />
+                <span class="restaurants__badge">Nouveau</span>
 
-              <span class="restaurants__badge">Nouveau</span>
+                <footer class="restaurants__item-footer">
+                  <div class="restaurants__item-infos">
+                    <h4 class="restaurants__item-title">la note enchantée</h4>
+                    <span class="restaurants__item-city">Charonne</span>
+                  </div>
+                </footer>
+              </a>
 
-              <footer class="restaurants__item-footer">
-                <div class="restaurants__item-infos">
-                  <h4 class="restaurants__item-title">La note enchantée</h4>
+              <label for="restaurant-2" class="like">
+                <input type="checkbox" id="restaurant-2" />
 
-                  <span class="restaurants__item-city">Charonne</span>
-                </div>
+                <svg>
+                  <use xlink:href="images/icons-sprite.svg#heart" />
+                </svg>
+              </label>
+            </div>
 
-                <label for="restaurant-2" class="like">
-                  <input type="checkbox" id="restaurant-2" />
+            <div class="restaurants__item-wrapper">
+              <a href="/a-la-francaise.html" class="restaurants__item">
+                <img
+                  src="images/a-la-francaise.webp"
+                  alt="À la française"
+                  class="restaurants__item-img"
+                />
 
-                  <svg>
-                    <use xlink:href="images/icons-sprite.svg#heart" />
-                  </svg>
-                </label>
-              </footer>
-            </a>
+                <footer class="restaurants__item-footer">
+                  <div class="restaurants__item-infos">
+                    <h4 class="restaurants__item-title">À la française</h4>
+                    <span class="restaurants__item-city">Cité rouge</span>
+                  </div>
+                </footer>
+              </a>
 
-            <a href="/a-la-francaise.html" class="restaurants__item">
-              <img
-                src="images/a-la-francaise.webp"
-                alt="À la française"
-                class="restaurants__item-img"
-              />
+              <label for="restaurant-3" class="like">
+                <input type="checkbox" id="restaurant-3" />
 
-              <footer class="restaurants__item-footer">
-                <div class="restaurants__item-infos">
-                  <h4 class="restaurants__item-title">À la française</h4>
+                <svg>
+                  <use xlink:href="images/icons-sprite.svg#heart" />
+                </svg>
+              </label>
+            </div>
 
-                  <span class="restaurants__item-city">Cité Rouge</span>
-                </div>
+            <div class="restaurants__item-wrapper">
+              <a href="/le-delice-des-sens.html" class="restaurants__item">
+                <img
+                  src="images/le-delice-des-sens.webp"
+                  alt="Le délice des sens"
+                  class="restaurants__item-img"
+                />
 
-                <label for="restaurant-3" class="like">
-                  <input type="checkbox" id="restaurant-3" />
+                <footer class="restaurants__item-footer">
+                  <div class="restaurants__item-infos">
+                    <h4 class="restaurants__item-title">Le délice des sens</h4>
+                    <span class="restaurants__item-city">Folie-Méricourt</span>
+                  </div>
+                </footer>
+              </a>
 
-                  <svg>
-                    <use xlink:href="images/icons-sprite.svg#heart" />
-                  </svg>
-                </label>
-              </footer>
-            </a>
+              <label for="restaurant-4" class="like">
+                <input type="checkbox" id="restaurant-4" />
 
-            <a href="/le-delice-des-sens.html" class="restaurants__item">
-              <img
-                src="images/le-delice-des-sens.webp"
-                alt="Le délice des sens"
-                class="restaurants__item-img"
-              />
-
-              <footer class="restaurants__item-footer">
-                <div class="restaurants__item-infos">
-                  <h4 class="restaurants__item-title">Le délice des sens</h4>
-
-                  <span class="restaurants__item-city">Folie-Méricourt</span>
-                </div>
-
-                <label for="restaurant-4" class="like">
-                  <input type="checkbox" id="restaurant-4" />
-
-                  <svg>
-                    <use xlink:href="images/icons-sprite.svg#heart" />
-                  </svg>
-                </label>
-              </footer>
-            </a>
+                <svg>
+                  <use xlink:href="images/icons-sprite.svg#heart" />
+                </svg>
+              </label>
+            </div>
           </div>
         </div>
       </section>

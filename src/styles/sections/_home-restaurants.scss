@@ -20,10 +20,24 @@
   }
 
   &__item {
-    position: relative;
-    border-radius: 2rem;
-    overflow: hidden;
-    box-shadow: $shadow-02;
+    &-wrapper {
+      position: relative;
+      border-radius: 2rem;
+      overflow: hidden;
+      box-shadow: $shadow-02;
+
+      label {
+        position: absolute;
+        bottom: 3.1rem;
+        right: 2.4rem;
+      }
+
+      &:hover {
+        .restaurants__item-img {
+          transform: scale(1.5) rotate(10deg);
+        }
+      }
+    }
 
     &-img {
       height: 20rem;
@@ -48,12 +62,6 @@
       font-size: $fs-03;
       font-weight: $fw-700;
       color: $color-fg-01;
-    }
-
-    &:hover {
-      .restaurants__item-img {
-        transform: scale(1.5) rotate(10deg);
-      }
     }
   }
 
