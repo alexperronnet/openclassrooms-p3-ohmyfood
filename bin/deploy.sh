@@ -11,7 +11,8 @@ cd dist
 
 git init
 git add -A
+git checkout -b main
 git commit -m 'Deploy'
-git push -f git@github.com:alexperronnet/openclassrooms-p3-ohmyfood.git main:gh-pages
+git push -f git@github.com:alexperronnet/openclassrooms-p3-ohmyfood.git main:deploy
 
 cd -
