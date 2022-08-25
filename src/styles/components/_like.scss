@@ -12,7 +12,7 @@
       animation: 800ms popover ease-in-out forwards;
     }
 
-    &:checked {
+    &:is(:checked, :hover) {
       + svg {
         animation: 800ms pop ease-in-out forwards;
       }
