@@ -82,6 +82,12 @@
         }
       }
 
+      &:not(:checked, :hover) ~ .menu__item-check {
+        .menu__item-check-icon {
+          transition: none;
+        }
+      }
+
       &:checked ~ * {
         cursor: not-allowed;
       }
