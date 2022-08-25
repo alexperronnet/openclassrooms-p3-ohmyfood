@@ -78,7 +78,7 @@
         margin-right: 0rem;
 
         .menu__item-check-icon {
-          transform: rotate(-360deg);
+          transform: rotate(360deg);
         }
       }
 
@@ -121,12 +121,13 @@
       background-color: $color-03;
       padding: 2rem;
       margin-right: -6.4rem;
-      transition: all 250ms ease-in-out;
+      transition: all 500ms ease-in-out;
 
       &-icon {
         @include icon(2.4rem);
+        transform: rotate(0deg);
         fill: $color-fg-03;
-        transition: all 250ms ease-in-out;
+        transition: transform 500ms 125ms ease-in-out;
       }
     }
   }
