@@ -74,6 +74,12 @@ npm run build
 npm run preview
 ```
 
+## License
+
+This is an OpenClassrooms project. The code is freely reusable, but assets (images and logo) are not because they are not mine.
+
+If you are also a student of OC, you can freely use my work as inspiration, but I advise you not to copy parts of it.
+
 ---
 
-See the [live URL](https://alexperronnet.github.io/openclassrooms-p3-ohmyfood/)
+See the [live URL](https://ohmyfood.alexperronnet.dev)
